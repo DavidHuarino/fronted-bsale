@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Online Store</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <!-- <img src="./img/logo.png" class="nav__img"> -->
+            <section class="nav__category">
+                <ul class="nav__list-category"></ul>
+            </section>
+            <input type="search" id="input-search" placeholder="Search product..." class="nav__search">
+        </nav>
+    </header>
+    <main class="main">
+        <section class="container-cards container" id="container-cards">
+        </section>
+        <section class="loadingspinner container"></section>
+    </main>
+    <section>
+        <div class="paginate container" id="container-paginate">
+            <span class="paginate__button-left">&#8249;</span>
+            <span id="page-number"></span>
+            <span class="paginate__button-right">&#8250;</span>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #e5dcc3;
+  font-family: "Poppins", sans-serif; }
+
+.header {
+  height: 5rem;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%; }
+
+.container {
+  width: 95%;
+  margin: auto; }
+
+.nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between; }
+  .nav__img {
+    width: 2rem;
+    display: block; }
+  .nav__search {
+    outline: none;
+    border: none;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.3rem;
+    width: 20rem; }
+  .nav__category {
+    color: #fff; }
+  .nav__list-category {
+    outline: none;
+    list-style: none;
+    display: flex; }
+  .nav__item-category {
+    margin: 1rem;
+    text-transform: uppercase;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; }
+    .nav__item-category:hover {
+      border-bottom: 2px solid #fff; }
+
+.card {
+  background: #fff;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.25rem 0.275rem rgba(0, 0, 0, 0.3);
+  margin: 0 1.2rem;
+  transition: all 0.3s ease-in-out; }
+  .card:hover {
+    transform: translateY(-6px); }
+  .card__container-img {
+    height: 12.5rem;
+    padding: 0.3rem; }
+  .card__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; }
+  .card__information {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%; }
+  .card__container-footer {
+    padding: 0.3rem;
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: 600; }
+  .card__title {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600; }
+  .card__category {
+    color: #bbb;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    word-spacing: 0.0625rem; }
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding: 1.5rem;
+  gap: 1.5rem; }
+
+.paginate {
+  text-align: center;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center; }
+  .paginate__item {
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    background: #fff;
+    display: inline-flex;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    box-shadow: 0 0.25rem 0.275rem rgba(0, 0, 0, 0.3); }
+  .paginate__button-left {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    box-shadow: 0 0.25rem 0.275rem rgba(0, 0, 0, 0.3); }
+  .paginate__button-right {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    box-shadow: 0 0.25rem 0.275rem rgba(0, 0, 0, 0.3); }
+
+.card-empty-products {
+  background: red;
+  width: 50%;
+  height: 7rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .card-empty-products__message {
+    font-size: 1.5rem;
+    font-weight: 400; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem; }
+
+.opacity {
+  opacity: 0.5;
+  cursor: not-allowed; }
+
+.loadingspinner {
+  pointer-events: none;
+  width: 3em;
+  height: 3em;
+  border: 0.4em solid transparent;
+  border-color: #eee;
+  border-top-color: #3e67ec;
+  border-radius: 50%;
+  animation: loadingspin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none; }
+
+@keyframes loadingspin {
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
