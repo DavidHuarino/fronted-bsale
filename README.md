@@ -7,6 +7,8 @@ The app contain simple information about products using the [api-rest-bsale](htt
 - Javascript
 
 ## Demo 
+the Application was deployed to [Netifly](https://www.netlify.com).
+
 [live Demo](https://tender-allen-1d8322.netlify.app)
 
 ## Screenshots
